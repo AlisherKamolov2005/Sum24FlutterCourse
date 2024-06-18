@@ -51,15 +51,8 @@ mixin JsonSerializable {
   };
 }
 
-double calculateArea(double length, double width, String shape){
-  //Rectangle
-  double area;
-  if(shape == 'circle') {
-    area = 3.14 * length * length;
-  } else {
-    area = length * width;
-  }
-  return area;
+double calculateArea(){
+  // your code here
 }
 
 class User{

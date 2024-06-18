@@ -1,2 +1,2 @@
 
-A new Flutter project.
+Templates for Sum24FlutterCourse in Innopolis University

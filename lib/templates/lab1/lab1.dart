@@ -21,10 +21,7 @@ class LAb1HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        leading: const Icon(Icons.stars),
-        title: const Text('Lab 2'),
-        backgroundColor: Colors.teal,
-        elevation: 4,
+        title: const Text('Lab 1'),
       ),
       body: myWidget(),
     );
@@ -60,41 +57,28 @@ class LAb1HomePage extends StatelessWidget {
   }
 
   Widget exercise1() {
-    return const Text(
+    return Text(
       "Hello Flutter!",
       style: TextStyle(
-        fontSize: 40,
-        color: Colors.blue,
-        fontWeight: FontWeight.bold,
-      ),
+          fontSize: 100, color: Colors.red, fontWeight: FontWeight.bold),
     );
   }
 
   Widget exercise2() {
-    return const Icon(
-      Icons.star,
-      size: 100,
-      color: Colors.yellow,
-    );
+    return Icon(Icons.home, size: 100, color: Colors.blue);
   }
 
   Widget exercise3() {
-    return Image.network('https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png');
+    return Image.network(
+        "https://www.w-dog.ru/wallpapers/10/1/500321873866125/priroda-les-trava.jpg");
   }
 
   Widget exercise4() {
     return TextButton(
-      onPressed:(){
-        print('Pressed'); 
-      },
-      child: const Text(
-        "Tap me", 
-        style: TextStyle(
-          color: Colors.purple,
-          fontSize: 50,
-        ),
-      ),
-    );
+        onPressed: () {
+          print('tapped');
+        },
+        child: const Text('Tap me!'));
   }
 
   Widget exercise5() {
