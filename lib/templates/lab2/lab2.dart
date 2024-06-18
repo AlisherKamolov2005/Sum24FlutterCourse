@@ -9,7 +9,10 @@ void main() {
 
 }
 
+
+
 class Book with JsonSerializable  {
+  static int a = 13;
   String title;
   String author;
   int numberOfPages;
@@ -63,7 +66,6 @@ class User{
   String name;
   int? age;
   String? email;
-  
   User(this.name, this.age, this.email);
 
   void printUserDetails() {
